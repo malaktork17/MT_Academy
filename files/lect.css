@@ -1,0 +1,211 @@
+/* =======================
+   Landing
+======================= */
+.landing {
+  height: 100vh;
+}
+
+.landing h3 {
+  padding: 20px 35px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  direction: rtl;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.landing p {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.title {
+  margin: 100px 0;
+}
+
+img {
+    width: 363px;
+    top: 143px;
+    position: relative;
+    left: 7px;
+}
+
+/* =======================
+   Record
+======================= */
+.video-box {
+  display: flex;
+  justify-content: center;
+  margin: 25px 15px;
+}
+
+.video-box iframe {
+  width: 80%;
+  height: 420px;
+  border-radius: 12px;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 15px rgba(106,90,205,0.3);
+}
+
+/* =======================
+   Topics
+======================= */
+.topic {
+  margin-bottom: 30px;
+  padding: 25px;
+  border-left: 5px solid var(--main-color);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(187,173,255,0.3);
+  transition: 0.3s;
+  direction: rtl;
+  background-color: #eae6ff;
+}
+
+.topic:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(106,90,205,0.3);
+}
+
+.topic h1,
+.topic h2,
+.topic h3 {
+  color: #7567b9;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.topic p {
+  font-weight: bold;
+  line-height: 1.87;
+  text-align: right;
+  margin: 30px 0px;
+  color: #0c0129;
+}
+
+/* =======================
+   Lecture Navigation
+======================= */
+.lesson-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0 50px;
+  list-style: none;
+  padding: 0;
+}
+.lesson-nav ul li a {
+  padding: 10px 22px;
+  border-radius: 7px;
+  background: var(--second-color, #2e2545);
+  border: 1px solid var(--main-color, #9c7dff);
+  color: #e5ddff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.lesson-nav ul li a:hover {
+  background: var(--main-color, #9c7dff);
+  color: var(--bg-color, #1e1b2e);
+}
+
+/* =======================
+   Code Block
+======================= */
+/* ستايل عام لكل الأكواد */
+pre code {
+  display: block;           
+  padding: 12px;            
+  border-radius: 6px;      
+  overflow-x: auto;          
+  background-color: #100036;  
+  font-size: 14px;          
+  line-height: 1.5;       
+  margin-bottom: 20px;      
+  direction: ltr;  
+}
+/* =======================
+   Python Features List
+======================= */
+.python-features , .python-tasks {
+  list-style: none; 
+  padding: 0;
+  margin: 20px 0;
+}
+.python-tasks{
+  direction: rtl;
+}
+.task-card h3{
+  text-align: center;
+}
+.python-features li ,.python-tasks li {
+  border-bottom: 1px solid #b4a9e74f;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px #b4a9e73d;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+.python-features li{
+  color: var(--second-color);
+  padding: 12px 14px 12px 40px;
+
+}
+.python-tasks li{
+  color: #e5ddff;
+   padding: 12px 32px 12px 40px;
+
+}
+.python-features li::before  {
+  content: "➤";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);                /* أخضر أنيق */
+  font-weight: bold;
+}
+.python-tasks li::before {
+  content: "➤";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--main-color);                /* أخضر أنيق */
+  font-weight: bold;
+}
+.python-features li strong {
+  color:#7567b9;                /* إبراز العنوان بالبنفسجي */
+}
+
+.python-features li:hover ,.python-tasks li:hover{
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*===================
+  links
+====================*/
+
+.python-features a , .python-tasks li a{
+  color: #3e0161;          
+  font-weight: 600;         
+  transition: color 0.3s;  
+  text-decoration: underline; 
+  font-size: 18px;
+}
+
+.python-features a:hover, .python-tasks li a:hover{
+  color: #a0185c;          
+}
+
+
+
+.lesson-nav input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+

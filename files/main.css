@@ -1,0 +1,255 @@
+/* =======================
+   Variables
+======================= */
+:root {
+  --main-color:  #bbadff; 
+  --second-color: #180150;
+  --third-color:#bbadffd9;;
+}
+
+/* =======================
+   Reset + Base
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image:url(../IMG/back.jpg) ;
+  background-size: cover;
+  background-position: center;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+}
+
+h1, h2, h3, h4, strong {
+  font-weight: 700; 
+}
+h4{
+ color: var(--main-color);
+  font-size: 22px;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+/* =======================
+   Container
+======================= */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =======================
+   Header
+======================= */
+
+header {
+  padding: 20px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background-color: #1801508f;
+}
+a {
+  text-decoration: none;
+}
+.container h2{color: var(--main-color); }
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: var(--main-color);
+}
+
+header nav .toggle-menu {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+}
+header .container::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+/* =======================
+   Landing
+======================= */
+.landing {
+  height:100vh;
+  background-color: var(--second);
+  background-image:url(../IMG/back.png) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 42%);
+}
+.landing .text {
+    position: relative;
+    top: 120px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    color: #b4a9e7;
+}
+
+/* =======================
+   SubTitles
+======================= */
+.tit{
+    background-color: var(--third-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom:70px;
+}
+.title {
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  
+}
+.title h2 , .tit h2{
+    color:var(--second-color)
+}
+
+/* =======================
+  All Cards
+======================= */
+
+.card, .student-feedback-card {
+  background-color: var(--second-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../IMG/back.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover, 
+.student-feedback-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+/* =======================
+  footer bottom 
+======================= */
+.footer {
+  text-align: center;
+  border-top: 1px solid var(--third-color);
+  padding: 20px;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  color: #fff;
+}
+.footer-bottom p {
+  color: var(--main-color);
+  padding-bottom: 20px;
+}
+
+/* Bottom Text */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--third-color);
+  padding-top: 15px;
+}
+/* =======================
+  goals
+======================= */
+.goals {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.goals li {
+  margin: 8px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+
+}
+
+.goals input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* =======================
+   Responsive
+======================= */
+/* Small */
+    @media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
